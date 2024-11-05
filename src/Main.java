@@ -1,18 +1,27 @@
 import java.util.Random;
 public class Main {
     public static void main(String[] args) {
-
         Random rande = new Random();
         int number=0;
-
-        Player gambler = new Player("Sasha");
-        Player notGambler= new Player();
-        System.out.println(notGambler.getName());
         int playerGuess;
+        int mode=1;
+
+        Player gambler;
+        if(mode==1){
+            gambler = new Player();
+        }
+        else{
+            gambler = new Guess();
+        }
+
+       // Player notGambler= new Player();
+       // System.out.println(notGambler.getName());
+
+       //  Guess gambler = new Guess();
 
 
        // gambler.setImieGracza("");
-      //  gambler.imieGracza = "Sasha";
+       //  gambler.imieGracza = "Sasha";
 
 
         do {
